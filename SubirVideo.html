@@ -1,0 +1,58 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Inoichi</title>
+		<meta charset="utf-8"> 
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+
+	<body id="subirVideoBody">
+		<div class= "navbar navbar-default navbar-fixed-top">
+			<div class="navbar-header">
+				<a href="index.html" class="navbar-brand">Inoichi</a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="subirVideo.html">Subir Videos</a></li>
+					<li><a href="verVideo.html">Ver Videos</a></li>
+				</ul>
+				
+			</div>	           
+		</div>
+
+		<div class= "container">
+			<button type="submit" class="btn btn-primary" data-toggle= "modal" data-target= "#subirVideo">Subir Video</button>
+		</div>
+
+		<div class= "modal fade" id= "subirVideo" tabindex="-1" role= "dialog" aria-hidden= "true" >
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="titulo">Compartir: </h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<form action= "scr.js"></form>
+						<div class="form-group">
+							<label for="input">Video</label>
+							<input id="archivo" name="video" type="file">
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+						<input type="submit" class="btn btn-primary" value= "Subir!">
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<script type="text/javascript" src="scr.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	</body>
+	</html>
